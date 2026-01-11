@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== Navbar Container ===== */
+.nav-sec {
+    height: 60px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Logo Section ===== */
+.logo-sec {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-sec .logo {
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo-sec .title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Nav Links ===== */
+.nav-link {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link .link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-link .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav-link .link:hover {
+    color: #38bdf8;
+}
+
+.nav-link .link:hover::after {
+    width: 100%;
+}
+
+/* ===== Social Links ===== */
+.nav-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-social a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-social a:hover {
+    color: #38bdf8;
+    transform: scale(1.15);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .nav-link {
+        display: none;
+    }
+
+    .logo-sec .title {
+        display: none;
+    }
+}
