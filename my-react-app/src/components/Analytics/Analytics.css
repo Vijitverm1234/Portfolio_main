@@ -1,0 +1,47 @@
+.analytics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.analytics-item{
+    text-align: center;
+}
+
+.analytics-item h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.analytics-item p{
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 0.4px;
+}
+
+/* Divider */
+.analytics-divider{
+    width: 1px;
+    height: 50px;
+    background: #111;
+    opacity: 0.3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+    .analytics{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .analytics-divider{
+        width: 60px;
+        height: 1px;
+    }
+}
